@@ -27,44 +27,44 @@ This project covers the **core OOP concepts in C++** with clear examples and wel
 
 ## 📁 Folder Structure
 Object-Oriented_Programming/
-│── Abstraction/
-│ ├── Interface_Abstraction.cpp
-│ └── Virtual_Abstraction.cpp
-│── Constructor/
-│ ├── CopyConstructor.cpp
-│ ├── Destructor.cpp
-│ └── DynamicConstructor.cpp
-│── Encapsulation/
+- │── Abstraction/
+- │ ├── Interface_Abstraction.cpp
+- │ └── Virtual_Abstraction.cpp
+- │── Constructor/
+- │ ├── CopyConstructor.cpp
+- │ ├── Destructor.cpp
+- │ └── DynamicConstructor.cpp
+- │── Encapsulation/
 │ ├── Encapsulation.cpp
 │ ├── Friend_Function_Encapsulation.cpp
 │ └── Inline_Encapsulation.cpp
-│── ExceptionHandling/
-│ └── ExceptionHandling.cpp
-│── FileHandling/
-│ ├── CreateFile.cpp
-│ ├── WriteFile.cpp
-│ ├── ReadFile.cpp
-│ └── DeleteFile.cpp
-│── Function_Arguments_Passing_Return_Mechanism/
-│ ├── CallByReference.cpp
-│ ├── CallByValue.cpp
-│ ├── ReturnByPointer.cpp
-│ └── ReturnByReference.cpp
-│── Inheritance/
-│ ├── MultiLevel_Inheritance.cpp
-│ ├── Multiple_Inheritance.cpp
-│ └── Simple_Inheritance.cpp
-│── Polymorphism/
-│ ├── Abstraction_Polymorphism.cpp
-│ └── Virtual_Function_Polymorphism.cpp
-│── Templates/
-│ ├── Template_Class.cpp
-│ └── Template_Function.cpp
-│── AccessModifier.cpp
-│── All-Inheritance.cpp
-│── Overloading.cpp
-│── Overriding.cpp
-│── Polymorphism.cpp
+- │── ExceptionHandling/
+- │ └── ExceptionHandling.cpp
+- │── FileHandling/
+- │ ├── CreateFile.cpp
+- │ ├── WriteFile.cpp
+- │ ├── ReadFile.cpp
+- │ └── DeleteFile.cpp
+- │── Function_Arguments_Passing_Return_Mechanism/
+- │ ├── CallByReference.cpp
+- │ ├── CallByValue.cpp
+- │ ├── ReturnByPointer.cpp
+- │ └── ReturnByReference.cpp
+- │── Inheritance/
+- │ ├── MultiLevel_Inheritance.cpp
+- │ ├── Multiple_Inheritance.cpp
+- │ └── Simple_Inheritance.cpp
+- │── Polymorphism/
+- │ ├── Abstraction_Polymorphism.cpp
+- │ └── Virtual_Function_Polymorphism.cpp
+- │── Templates/
+- │ ├── Template_Class.cpp
+- │ └── Template_Function.cpp
+- │── AccessModifier.cpp
+- │── All-Inheritance.cpp
+- │── Overloading.cpp
+- │── Overriding.cpp
+- │── Polymorphism.cpp
 ---
 
 🛠️ Technologies Used
