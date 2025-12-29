@@ -22,7 +22,8 @@ This project covers the **core OOP concepts in C++** with clear examples and wel
 - 🔁 Polymorphism  
 - ➕ Function Overloading  
 - 🔄 Function Overriding  
-
+- ⚠️ Exception Handling
+- 📁 File Handling
 ---
 
 ## 📁 Folder Structure
@@ -31,20 +32,20 @@ Object-Oriented_Programming/
    - ├── Interface_Abstraction.cpp
    - ├── Virtual_Abstraction.cpp
 -  Constructor/
-   - ├── CopyConstructor.cpp
+   - ├── Copy_Constructor.cpp
    - ├── Destructor.cpp
    - └── Dynamic_Constructor.cpp
 -  Encapsulation/
    - ├── Encapsulation.cpp
    - ├── Friend_Function_Encapsulation.cpp
    - └── Inline_Encapsulation.cpp
--  ExceptionHandling/
-   - └── ExceptionHandling.cpp
+-  Exception_Handling/
+   - └── Exception_Handling.cpp
 -  FileHandling/
-   - ├── CreateFile.cpp
-   - ├── WriteFile.cpp
-   - ├── ReadFile.cpp
-   - └── DeleteFile.cpp
+   - ├── Create_File.cpp
+   - ├── Write_File.cpp
+   - ├── Read_File.cpp
+   - └── Delete_File.cpp
 -  Function_Arguments_Passing_Return_Mechanism/
    - ├── CallByReference.cpp
    - ├── CallByValue.cpp
