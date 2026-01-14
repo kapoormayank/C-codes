@@ -1,4 +1,4 @@
-# 📘 C++ Object-Oriented Programming (OOP)
+# 📘 C++ Object-Oriented Programming (OOP) & Data Structures and Algorithms (DSA)
 
 This repository contains **C++ programs demonstrating Object-Oriented Programming concepts**.
 It is designed for **beginners and students** who want to understand OOP in a simple and practical way.
@@ -7,9 +7,14 @@ It is designed for **beginners and students** who want to understand OOP in a si
 
 ## 📖 About the Project
 
-Object-Oriented Programming (OOP) is a programming paradigm based on **classes and objects**.
+🔹 Object-Oriented Programming (OOP) is a programming paradigm based on **classes and objects**.
 This project covers the **core OOP concepts in C++** with clear examples and well-structured code.
 
+🔹 Data Structures & Algorithms (DSA)
+
+DSA helps you write efficient and optimized solutions by understanding how data is stored, accessed, and processed.
+
+This project provides simple, well-structured, and practical examples of both OOP and DSA concepts.
 ---
 
 ## ✅ OOP Concepts Covered
@@ -24,6 +29,44 @@ This project covers the **core OOP concepts in C++** with clear examples and wel
 - 🔄 Function Overriding  
 - ⚠️ Exception Handling
 - 📁 File Handling
+---
+
+## ✅ DSA Concepts Covered
+
+📊 Arrays
+
+🔗 Linked List (Singly / Doubly)
+
+📚 Stack
+
+🧺 Queue
+
+🌳 Trees (Binary Tree, BST)
+
+🕸️ Graphs (Basic Representation)
+
+🔍 Searching Algorithms
+
+   - Linear Search
+
+   -  Binary Search
+
+📐 Sorting Algorithms
+
+   - Bubble Sort
+
+   - Selection Sort
+
+   - Insertion Sort
+
+   - Merge Sort
+
+   - Quick Sort
+
+🧠 Recursion
+
+⏱️ Time & Space Complexity (Basics)
+
 ---
 
 ## 📁 Folder Structure
