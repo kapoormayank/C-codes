@@ -51,6 +51,8 @@ This project provides simple, well-structured, and practical examples of both OO
 
    -  Binary Search
 
+   -  Logarithm Search 
+
 📐 Sorting Algorithms
 
    - Bubble Sort
