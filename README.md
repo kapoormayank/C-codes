@@ -15,6 +15,8 @@ It helps developers write reusable, scalable, and organized code.
 
 This repository demonstrates the core concepts of OOP in C++ using simple examples and clean code.
 
+---
+
 # 🔹 Data Structures & Algorithms (DSA)
 
 Data Structures & Algorithms help developers build efficient and optimized solutions by understanding how data is stored, accessed, and processed.
@@ -49,11 +51,9 @@ This repository contains practical implementations of:
 - ⚠️ Exception Handling
 - 📁 File Handling
 
-
 ---
 
 # ✅ DSA Concepts Covered [![DSA](https://img.shields.io/badge/DSA-Data%20Structures%20%26%20Algorithms-blueviolet?style=flat)](https://en.wikipedia.org/wiki/Data_structure)
-
 
 ## 📌 Arrays
 
@@ -151,6 +151,7 @@ This repository contains practical implementations of:
 - Fibonacci Series
 
 ---
+
 ## 🔙 Backtracking Problems
 - N-Queens Problem
 - Simple Sudoku Solver
@@ -174,7 +175,6 @@ This repository contains practical implementations of:
 - Optimization Techniques
 
 ---
-
 # 🧪 LeetCode Solutions in C++
 
 This repository also contains solutions to various LeetCode problems implemented in C++ to improve:
@@ -300,7 +300,6 @@ If you would like to contribute:
 
 🌐 GitHub: https://github.com/kapoormayank9696
 
-
 ---
 
 # ⭐ Support
@@ -330,4 +329,4 @@ If you want, I can:
 
 ---
 
-Just tell me what you want next 😊
+Just tell me what you want next 😊..
