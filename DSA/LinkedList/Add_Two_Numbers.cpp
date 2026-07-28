@@ -7,6 +7,7 @@ using namespace std;
 
 // Class Of Singly Linked List
 class ListNode {
+    
     // Public Access Modifier
     public:
     int val;
