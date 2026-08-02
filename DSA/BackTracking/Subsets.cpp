@@ -22,6 +22,7 @@ class Solution {
         }
     }
 
+    // Function to return all subsets of the given set of numbers
     vector<vector<int>> subsets(vector<int>& nums) {
         vector<vector<int>> result;
         vector<int> temp;
