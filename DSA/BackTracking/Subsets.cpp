@@ -3,12 +3,15 @@
 #include <vector>
 using namespace std;
 
+// Class to implement the subsets generation algorithm
 class Solution {
     public:
     // Function to generate subsets using backtracking
     void subset(vector<int>& nums, vector<vector<int>>& result, vector<int>& temp, int index) {
         // Add current subset
         result.push_back(temp);
+
+        // Loop through the remaining elements to generate subsets
         for(int i = index; i < nums.size(); i++) {
             // Include element
             temp.push_back(nums[i]);
@@ -29,7 +32,7 @@ class Solution {
 
 // Main function
 int main() {
-    
+
     Solution obj;
     cout<<"Enter number of elements: ";
     int n;
