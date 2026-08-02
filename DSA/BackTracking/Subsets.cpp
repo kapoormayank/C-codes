@@ -29,6 +29,7 @@ class Solution {
 
 // Main function
 int main() {
+    
     Solution obj;
     cout<<"Enter number of elements: ";
     int n;
