@@ -1,3 +1,4 @@
+// Leetcode Problem 654: Maximum Binary Tree
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -83,6 +84,19 @@ class Solution {
 
 // Main function
 int main() {
+    vector<int> nums = {3, 2, 1, 6, 0, 5};
+
+    Solution solution;
+
+    TreeNode *root = solution.buildTree(nums);
+    cout << "Binary Tree (Preorder Traversal): " ;
+    solution.display(root);
+
+    TreeNode *maxRoot = solution.constructMaximumBinaryTree(nums);
+
+    cout << "\nMaximum Binary Tree (Preorder Traversal): ";
+
+    solution.display(maxRoot);
     return 0;
 }
 
