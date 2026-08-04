@@ -4,9 +4,10 @@
 using namespace std;
 
 // Node class for the binary tree
-class TreeNode
-{
-public:
+class TreeNode {
+    // Public Specifier
+    public:
+    
     // Data Members
     int val;
     TreeNode *left;
@@ -21,9 +22,11 @@ public:
 };
 
 // Class Solution
-class Solution
-{
-public:
+class Solution {
+    // Public Specifier
+    public:
+    
+    // Data Member
     int index = -1;
 
     // Build Binary Tree
