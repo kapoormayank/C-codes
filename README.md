@@ -22,6 +22,7 @@ This repository demonstrates the core concepts of OOP in C++ using simple exampl
 Data Structures & Algorithms help developers build efficient and optimized solutions by understanding how data is stored, accessed, and processed.
 
 This repository contains practical implementations of:
+
 - Arrays
 - Strings
 - Linked Lists
@@ -41,7 +42,9 @@ This repository contains practical implementations of:
 # ✅ OOP Concepts Covered
 
 - 🧱 Classes and Objects  
+
 - 🔐 Access Modifiers  
+
 - 📦 Encapsulation  
 - 🧩 Abstraction  
 - 🧬 Inheritance  
@@ -175,6 +178,7 @@ This repository contains practical implementations of:
 - Optimization Techniques
 
 ---
+
 # 🧪 LeetCode Solutions in C++
 
 This repository also contains solutions to various LeetCode problems implemented in C++ to improve:
@@ -186,6 +190,7 @@ This repository also contains solutions to various LeetCode problems implemented
 ---
 
 # 📁 Folder Structure
+
 Object-Oriented_Programming/
 -  Abstraction/
    - ├── Interface_Abstraction.cpp
@@ -225,6 +230,7 @@ Object-Oriented_Programming/
 -  Overloading.cpp
 -  Overriding.cpp
 -  Polymorphism.cpp
+  
 ---
 
 # 🛠️ Technologies Used
