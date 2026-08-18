@@ -24,6 +24,7 @@ class TreeNode {
 
 // Class Solution
 class Solution {
+
     // Public Specifier
     public:
     
@@ -31,11 +32,9 @@ class Solution {
     int index = -1;
 
     // Build Binary Tree
-    TreeNode *buildTree(vector<int> &nums)
-    {
+    TreeNode *buildTree(vector<int> &nums) {
         index++;
-        if (index >= nums.size() || nums[index] == -1)
-        {
+        if (index >= nums.size() || nums[index] == -1) {
             return nullptr;
         }
 
@@ -50,25 +49,20 @@ class Solution {
     }
 
     // Function to construct the maximum binary tree
-    TreeNode *constructMaximumBinaryTree(vector<int> &nums)
-    {
+    TreeNode *constructMaximumBinaryTree(vector<int> &nums) {
         return buildTree(nums, 0, nums.size() - 1);
     }
 
     // Helper function to build the tree recursively
-    TreeNode *buildTree(vector<int> &nums, int left, int right)
-    {
-        if (left > right)
-        {
+    TreeNode *buildTree(vector<int> &nums, int left, int right) {
+        if (left > right) {
             return nullptr;
         }
 
         // Find the index of the maximum element in the current range
         int maxIndex = left;
-        for (int i = left; i <= right; i++)
-        {
-            if (nums[i] > nums[maxIndex])
-            {
+        for (int i = left; i <= right; i++) {
+            if (nums[i] > nums[maxIndex]) {
                 maxIndex = i;
             }
         }
@@ -84,10 +78,8 @@ class Solution {
     }
 
     // Display Binary Tree
-    void display(TreeNode *root)
-    {
-        if (root == nullptr)
-        {
+    void display(TreeNode *root) {
+        if (root == nullptr) {
             return;
         }
         cout << root->val << " ";
@@ -97,8 +89,7 @@ class Solution {
 };
 
 // Main function
-int main()
-{
+int main() {
     vector<int> nums = {3, 2, 1, 6, 0, 5};
 
     Solution solution;
