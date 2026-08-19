@@ -14,8 +14,7 @@ class TreeNode {
     TreeNode *left;
     TreeNode *right;
 
-    TreeNode(int x)
-    {
+    TreeNode(int x) {
         this->val = x;
         this->left = nullptr;
         this->right = nullptr;
