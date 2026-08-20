@@ -7,6 +7,7 @@ using namespace std;
 
 // Graph Class
 class Graph {
+
     // Data Members
     int V; // Number of vertices
     list<int>* l;
@@ -24,6 +25,7 @@ class Graph {
         l[v].push_back(u); // For undirected graph
     }
 
+    // Function to print the adjacency list of the graph
     void printAdjList() {
         for (int i = 0; i < V; i++) {
             cout << "Vertex " << i << ": ";
