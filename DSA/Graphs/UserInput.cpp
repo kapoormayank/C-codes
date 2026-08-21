@@ -13,7 +13,7 @@ class Graph {
     list<int>* l;
 
     public:
-    
+
     // Parameterized Constructor
     Graph(int v) {
         this->V = v;
@@ -40,7 +40,8 @@ class Graph {
 
 // Main function
 int main() {
-    Graph g(5); // Create a graph with 5 vertices
+    // Create a graph with 5 vertices
+    Graph g(5);
 
     g.addEdge(0, 1);
     g.addEdge(1, 2);
