@@ -38,7 +38,25 @@ class Graph {
 
     // Function to perform BFS traversal of the graph
     void bfs() {
-        Queue<int> q;
+        queue<int> Q;
+        vector<bool> visited(V, false);
+
+        Q.push(0); // Start BFS from vertex 0
+        visited[0] = true;
+
+        while(Q.size() > 0) {
+            int u = Q.front();
+            Q.pop();
+            cout << u << " ";
+
+            for(int v : l[u]) {
+                if(!visited[v]) {
+                    Q.push(v);
+                    visited[v] = true;
+                }
+            }
+        }
+        cout << endl;
     }
 };
 
@@ -55,5 +73,8 @@ int main() {
 
     cout << "Adjacency List of the Graph:" << endl;
     g.printAdjList();
+
+    cout << "\nBFS Traversal of the Graph: " ;
+    g.bfs();
     return 0;
 }
