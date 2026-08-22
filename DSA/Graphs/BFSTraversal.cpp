@@ -8,10 +8,12 @@ using namespace std;
 
 // Graph Class
 class Graph {
+
     // Data Members
     int V; // Number of vertices
     list<int>* l;
 
+    // Public Access Specifier
     public:
     // Parameterized Constructor
     Graph(int v) {
