@@ -41,7 +41,7 @@ class Graph {
 
     // Function to perform BFS traversal of the graph
     void bfs() {
-        
+
         queue<int> Q;
         vector<bool> visited(V, false);
 
@@ -66,6 +66,7 @@ class Graph {
 
 // Main function
 int main() {
+    
     // Create a graph with 5 vertices
     Graph g(5);
 
