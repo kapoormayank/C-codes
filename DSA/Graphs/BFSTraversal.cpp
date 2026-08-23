@@ -30,6 +30,7 @@ class Graph {
 
     // Function to print the adjacency list of the graph
     void printAdjList() {
+
         for (int i = 0; i < V; i++) {
             cout << "Vertex " << i << ": ";
             for (int x : l[i]) {
@@ -37,6 +38,7 @@ class Graph {
             }
             cout << endl;
         }
+        
     }
 
     // Function to perform BFS traversal of the graph
@@ -66,7 +68,7 @@ class Graph {
 
 // Main function
 int main() {
-    
+
     // Create a graph with 5 vertices
     Graph g(5);
 
