@@ -41,6 +41,7 @@ class Graph {
 
     // Function to perform BFS traversal of the graph
     void bfs() {
+        
         queue<int> Q;
         vector<bool> visited(V, false);
 
