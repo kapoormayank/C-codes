@@ -25,6 +25,8 @@ class Graph {
         l[v].push_back(u); // For undirected graph
     }
 
+    // Function to perform DFS traversal of the graph
+
     // Print the adjacency list of the graph
     void printAdjList() {
         for (int i = 0; i < V; i++) {
