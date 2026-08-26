@@ -52,12 +52,12 @@ class Graph {
 
 // Main function
 int main() {
-    Graph g(5); // Create a graph with 7 vertices
+    Graph g(5); // Create a graph with 5 vertices
 
     // Add edges to the graph
     g.addEdge(0, 1);
+    g.addEdge(1, 2);
     g.addEdge(1, 3);
-    g.addEdge(1, 4);
     g.addEdge(2, 4);
 
     // Print the adjacency list
@@ -66,7 +66,6 @@ int main() {
     // Perform DFS traversal
     vector<bool> visited(5, false);
     g.dfs(0, visited);
-    g.printAdjList();
     return 0;
 };
 
