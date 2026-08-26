@@ -26,6 +26,17 @@ class Graph {
     }
 
     // Function to perform DFS traversal of the graph
+    void dfs(int start,vector<bool>& visited) {
+        cout << start << " "; // Print the current vertex
+        visited[start] = true; // Mark the current vertex as visited
+
+        // Recur for all the vertices adjacent to this vertex
+        for (int x : l[start]) {
+            if (!visited[x]) {
+                dfs(x, visited);
+            }
+        }
+    }
 
     // Print the adjacency list of the graph
     void printAdjList() {
@@ -41,19 +52,21 @@ class Graph {
 
 // Main function
 int main() {
-    Graph g(7); // Create a graph with 7 vertices
+    Graph g(5); // Create a graph with 7 vertices
 
     // Add edges to the graph
     g.addEdge(0, 1);
-    g.addEdge(0, 2);
     g.addEdge(1, 3);
     g.addEdge(1, 4);
-    g.addEdge(2, 5);
-    g.addEdge(2, 6);
+    g.addEdge(2, 4);
 
     // Print the adjacency list
     g.printAdjList();
 
+    // Perform DFS traversal
+    vector<bool> visited(5, false);
+    g.dfs(0, visited);
+    g.printAdjList();
     return 0;
 };
 
