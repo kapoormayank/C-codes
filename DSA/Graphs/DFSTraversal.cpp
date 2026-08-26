@@ -64,6 +64,7 @@ int main() {
     g.printAdjList();
 
     // Perform DFS traversal
+    cout << "DFS Traversal starting from vertex 0: ";
     vector<bool> visited(5, false);
     g.dfs(0, visited);
     return 0;
