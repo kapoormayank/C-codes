@@ -28,21 +28,8 @@ class Graph {
         l[v].push_back(u); // For undirected graph
     }
 
-    // Function to print the adjacency list of the graph
-    void printAdjList() {
-
-        for (int i = 0; i < V; i++) {
-            cout << "Vertex " << i << ": ";
-            for (int x : l[i]) {
-                cout << x << " ";
-            }
-            cout << endl;
-        }
-        
-    }
-
     // Function to perform BFS traversal of the graph
-    void bfs() {
+    void bfs() { // O(V + E)
 
         queue<int> Q;
         vector<bool> visited(V, false);
@@ -63,6 +50,20 @@ class Graph {
             }
         }
         cout << endl;
+    }
+
+    // Function to print the adjacency list of the graph
+    void printAdjList() {
+
+        for (int i = 0; i < V; i++)
+        {
+            cout << "Vertex " << i << ": ";
+            for (int x : l[i])
+            {
+                cout << x << " ";
+            }
+            cout << endl;
+        }
     }
 };
 
