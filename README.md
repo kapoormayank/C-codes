@@ -1,4 +1,4 @@
-# 💻 C++ Object-Oriented Programming (OOP) & Data Structures and Algorithms (DSA)
+# 💻 C++ Object-Oriented Programming (OOP) & Data Structures and Algorithms (DSA).
 
 A complete C++ learning repository covering Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), File Handling, and LeetCode Solutions.
 
