@@ -7,6 +7,8 @@ using namespace std;
 
 // Graph Class
 class Graph {
+
+    // Data Members
     int V; // Number of vertices
     list<int>* l; // Adjacency list
 
@@ -26,7 +28,10 @@ class Graph {
     }
 
     // Function to perform DFS traversal of the graph
-    void dfs(int start,vector<bool>& visited) {
+    void dfs(int start,vector<bool>& visited) { 
+        
+        // O(V + E) Time Complexity
+
         cout << start << " "; // Print the current vertex
         visited[start] = true; // Mark the current vertex as visited
 
