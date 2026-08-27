@@ -52,7 +52,8 @@ class Graph {
 
 // Main function
 int main() {
-    Graph g(5); // Create a graph with 5 vertices
+    // Create a graph with 5 vertices
+    Graph g(5);
 
     // Add edges to the graph
     g.addEdge(0, 1);
@@ -67,7 +68,7 @@ int main() {
     cout << "DFS Traversal starting from vertex 0: ";
     vector<bool> visited(5, false);
     g.dfs(0, visited);
-    
+
     return 0;
 };
 
