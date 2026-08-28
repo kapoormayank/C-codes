@@ -260,7 +260,7 @@ By exploring this repository, you will:
 - ✅ Improve C++ programming skills
 - ✅ Learn DSA implementation step by step
 - ✅ Practice problem-solving techniques
-- ✅ Learn project structure and clean coding
+- ✅ Learn project structure and clean coding.
 - ✅ Build strong programming fundamentals.
 
 ---
