@@ -261,7 +261,7 @@ By exploring this repository, you will:
 - ✅ Learn DSA implementation step by step
 - ✅ Practice problem-solving techniques
 - ✅ Learn project structure and clean coding
-- ✅ Build strong programming fundamentals
+- ✅ Build strong programming fundamentals.
 
 ---
 
