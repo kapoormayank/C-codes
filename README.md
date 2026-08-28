@@ -256,7 +256,7 @@ Visual Studio Code
 
 By exploring this repository, you will:
 
-- ✅ Understand real-world OOP concepts in C++
+- ✅ Understand real-world OOP concepts in C++.
 - ✅ Improve C++ programming skills
 - ✅ Learn DSA implementation step by step
 - ✅ Practice problem-solving techniques
