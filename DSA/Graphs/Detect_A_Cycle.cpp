@@ -15,11 +15,23 @@ class Graph {
         adj = new list<int>[V];
     }
 
+    // Function to add an edge to the graph
     void addEdge(int v, int w) {
         adj[v].push_back(w); // Add w to v’s list.
     }
-    
+
     bool isCyclic();
+
+    // Print the adjacency list of the graph
+    void printAdjList() {
+        for (int i = 0; i < V; i++) {
+            cout << "Vertex " << i << ": ";
+            for (int x : adj[i]) {
+                cout << x << " ";
+            }
+            cout << endl;
+        }
+    }
 };
 
 // Main function
