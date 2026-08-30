@@ -16,8 +16,9 @@ class Graph {
     }
 
     // Function to add an edge to the graph
-    void addEdge(int v, int w) {
-        adj[v].push_back(w); // Add w to v’s list.
+    void addEdge(int u, int v) {
+        adj[u].push_back(v); // Add v to u’s list.
+        adj[v].push_back(u); // Add u to v’s list (for undirected graph)
     }
 
     bool isCyclic();
