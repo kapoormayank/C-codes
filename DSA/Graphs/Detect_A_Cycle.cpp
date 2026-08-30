@@ -55,9 +55,7 @@ class Graph {
         // Check every vertex because graph
         // can be disconnected
         for (int i = 0; i < V; i++) {
-
             if (!visited[i]) {
-
                 if (dfsCyclic(i, visited, recStack)) {
                     return true;
                 }
