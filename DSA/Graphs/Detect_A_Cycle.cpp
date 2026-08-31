@@ -24,17 +24,34 @@ class Graph {
     }
 
     // Function to perform DFS traversal of the graph and detect a cycle
-    bool dfsCyclic(int v, int par, vector<bool>& visited) {
-
+    bool dfsCyclic(int v,int par ,vector<bool>& visited) {
         visited[v] = true; // Mark the current vertex as visited
 
         for(int neighbor : adj[v]) {
-            if(!visited[v]){
-                if (dfsCyclic(neighbor, par, visited)) {
+            if(!visited[v]) {
+                if(dfsCyclic(neighbor,v,visited)){
                     return true;
                 }
-            } else if(v != par) {
+            } else if(neighbor != par) {
                 return true;
+            }
+        }
+
+        return false;
+    }
+
+    // Function to check if graph contains a cycle
+    bool isCyclic() {
+
+        vector<bool> visited(V, false);
+
+        // Check every vertex because graph
+        // can be disconnected
+        for (int i = 0; i < V; i++) {
+            if (!visited[i]) {
+                if (dfsCyclic(i, -1,visited)) {
+                    return true;
+                }
             }
         }
 
@@ -70,7 +87,7 @@ int main() {
     g.printAdjList();
 
     // Check cycle
-    if (g.dfsCyclic()) {
+    if (g.isCyclic()) {
         cout << "\nGraph contains a cycle." << endl;
     } else {
         cout << "\nGraph does not contain a cycle." << endl;
