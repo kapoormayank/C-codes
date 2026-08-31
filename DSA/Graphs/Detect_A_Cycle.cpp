@@ -60,6 +60,7 @@ class Graph {
 
     // Print the adjacency list of the graph
     void printAdjList() {
+
         for (int i = 0; i < V; i++) {
             cout << "Vertex " << i << ": ";
             for (int x : adj[i]) {
@@ -67,6 +68,7 @@ class Graph {
             }
             cout << endl;
         }
+        
     }
 };
 
