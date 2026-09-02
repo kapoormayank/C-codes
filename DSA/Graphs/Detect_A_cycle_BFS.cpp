@@ -10,7 +10,7 @@ class Graph {
     int V;          // Number of vertices
     list<int> *adj; // Adjacency list
 
-public:
+    public:
     // Parameterized Constructor
     Graph(int V) {
         this->V = V;
