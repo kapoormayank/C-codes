@@ -7,6 +7,7 @@ using namespace std;
 
 // Class to represent a directed graph
 class Graph {
+    // Data members
     int V;          // Number of vertices
     list<int> *adj; // Adjacency list
 
