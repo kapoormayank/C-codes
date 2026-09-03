@@ -1,4 +1,4 @@
-// 
+// Count the number of islands in a 2D grid using BFS Algorithm Implement in a Java
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -20,25 +20,6 @@ class Graph {
     void addEdge(int u, int v) {
         adj[u].push_back(v); // Add v to u’s list.
         adj[v].push_back(u); // Add u to v’s list (for undirected graph)
-    }
-
-    // Function to check if graph contains a cycle
-    bool isCyclic() {
-
-        vector<bool> visited(V, false);
-
-        // Check every vertex because graph
-        // can be disconnected
-        for (int i = 0; i < V; i++) {
-            if (!visited[i]) {
-                if (bfsCyclic(i, visited))
-                {
-                    return true;
-                }
-            }
-        }
-
-        return false;
     }
 
     // Print the adjacency list of the graph
