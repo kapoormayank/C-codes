@@ -22,6 +22,26 @@ class Graph {
         adj[v].push_back(u); // Add u to v’s list (for undirected graph)
     }
 
+    // Island counting function using BFS
+    int countIslands(vector<vector<int>>& grid) {
+        if (grid.empty() || grid[0].empty()) return 0;
+
+        int rows = grid.size();
+        int cols = grid[0].size();
+        vector<vector<bool>> visited(rows, vector<bool>(cols, false));
+        int count = 0;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (grid[i][j] == 1 && !visited[i][j]) {
+                    bfs(grid, visited, i, j);
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
     // Print the adjacency list of the graph
     void printAdjList() {
 
