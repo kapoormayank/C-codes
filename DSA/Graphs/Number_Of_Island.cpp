@@ -1,28 +1,14 @@
-// Count the number of islands in a 2D grid using BFS Algorithm Implement in a Java
+// Count the number of islands in a 2D grid using DFS Algorithm
 #include <iostream>
 #include <vector>
 using namespace std;
 
 // Class to represent a directed graph
 class Graph {
-    // Data members
-    int V;          // Number of vertices
-    list<int> *adj; // Adjacency list
 
     public:
-    // Parameterized Constructor
-    Graph(int V) {
-        this->V = V;
-        adj = new list<int>[V];
-    }
 
-    // Function to add an edge to the graph undirected
-    void addEdge(int u, int v) {
-        adj[u].push_back(v); // Add v to u’s list.
-        adj[v].push_back(u); // Add u to v’s list (for undirected graph)
-    }
-
-    // Island counting function using BFS
+    // Island counting function using DFS
     int countIslands(vector<vector<int>>& grid) {
         if (grid.empty() || grid[0].empty()) return 0;
 
@@ -34,7 +20,7 @@ class Graph {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (grid[i][j] == 1 && !visited[i][j]) {
-                    bfs(grid, visited, i, j);
+                    dfs(grid, visited, i, j);
                     count++;
                 }
             }
@@ -42,32 +28,45 @@ class Graph {
         return count;
     }
 
-    // Print the adjacency list of the graph
-    void printAdjList() {
+    // Depth First Search to mark all connected land cells
+    void dfs(vector<vector<int>>& grid, vector<vector<bool>>& visited, int i, int j) {
+        int rows = grid.size();
+        int cols = grid[0].size();
 
-        for (int i = 0; i < V; i++) {
-            cout << "Vertex " << i << ": ";
-            for (int x : adj[i]) {
-                cout << x << " ";
-            }
-            cout << endl;
+        // Check for out of bounds or water or already visited
+        if (i < 0 || i >= rows || j < 0 || j >= cols || grid[i][j] == 0 || visited[i][j]) {
+            return;
         }
+
+        // Mark the cell as visited
+        visited[i][j] = true;
+
+        // Explore all 8 directions
+        dfs(grid, visited, i - 1, j);     // Up
+        dfs(grid, visited, i + 1, j);     // Down
+        dfs(grid, visited, i, j - 1);     // Left
+        dfs(grid, visited, i, j + 1);     // Right
     }
 };
 
 // Main function
 int main(){
 
-    // Create a graph with 5 vertices
-    Graph g(5);
+    // Define a 2D grid representing the map
+    vector<vector<int>> grid = {
+        {1, 1, 0, 0, 0},
+        {1, 1, 0, 0, 0},
+        {0, 0, 1, 0, 0},
+        {0, 0, 0, 1, 1}
+    };
 
-    // Add edges to the graph
-    g.addEdge(0, 1);
-    g.addEdge(1, 2);
-    g.addEdge(1, 3);
-    g.addEdge(2, 4);
+    // Create a graph object
+    Graph g;
 
-    // Print adjacency list
-    cout << "Graph representation:\n";
-    g.printAdjList();
+    // Count the number of islands in the grid
+    int numberOfIslands = g.countIslands(grid);
+    // Print the number of islands
+    cout << "Number of islands: " << numberOfIslands << endl;
+
+    return 0;
 }
