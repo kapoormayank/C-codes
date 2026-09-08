@@ -1,7 +1,7 @@
 // Rotting Oranges Algorithm Implementation In C++
 #include <iostream>
 #include <vector>
-
+#include <queue>
 using namespace std;
 
 // Graph Class
@@ -42,11 +42,11 @@ int main() {
         {0, 1, 1}
     };
 
-    // Create an instance of the Graph class
     Graph g;
 
-    // Call the function to calculate the time taken for all oranges to rot
-    // (Function implementation is not provided in this snippet)
-    
+    int result = g.countRottenOranges(grid);
+
+    cout << "Time taken: " << result << " minutes" << endl;
+
     return 0;
 }
