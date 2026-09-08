@@ -7,6 +7,30 @@ using namespace std;
 // Graph Class
 class Graph {
 
+    // Public Specifier
+    public: 
+    int countRottenOrganes(vector<vector<int>>& grid) {
+        int rows = grid.size();
+        int cols = grid[0].size();
+
+        vector<vector<bool>> visited(rows, vector<bool>(cols, false));
+
+        queue<pair<int, int>> queue;
+        queue.push({0, 0}); // Start from the first cell (0, 0)
+        visited[0][0] = true;
+
+        while (queue.size() > 0) {
+            int u = queue.pop();
+            for(int neighbor: grid[u]) {
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    queue.push(neighbor);
+                }
+            }
+        }
+
+        return -1;
+    }
 };
 
 // Main function
