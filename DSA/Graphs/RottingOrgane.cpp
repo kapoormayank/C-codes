@@ -43,10 +43,11 @@ int main() {
         {0, 1, 1}
     };
 
+    // Create a Graph object
     Graph g;
 
+    // Call the countRottenOranges function and store the result
     int result = g.countRottenOranges(grid);
-
     cout << "Time taken: " << result << " minutes" << endl;
 
     return 0;
