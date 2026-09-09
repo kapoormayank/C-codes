@@ -15,12 +15,13 @@ class Graph {
 
         vector<vector<bool>> visited(rows, vector<bool>(cols, false));
 
-        queue<pair<int, int>> queue;
-        queue.push({0, 0}); // Start from the first cell (0, 0)
+        queue<pair<pair<int, int>,int>> queue;
+        queue.push({{0, 0}, 0}); // Start from the first cell (0, 0) with time 0
         visited[0][0] = true;
 
         while (queue.size() > 0) {
-            int u = queue.pop();
+            auto [cell, time] = queue.front();
+            queue.pop();
             for(int neighbor: grid[u]) {
                 if (!visited[neighbor]) {
                     visited[neighbor] = true;
